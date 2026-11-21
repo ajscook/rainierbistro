@@ -49,7 +49,7 @@ h1,h2,h3{line-height:1.15;text-wrap:balance}
 .lane .lh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-bottom:10px}
 .lane .lh b{font-size:1.05rem}
 .lane .lh span{font-size:.85rem;color:var(--ink2)}
-.whatif{background:var(--input);border:1px dashed var(--orange);border-radius:12px;padding:14px 16px}
+.whatif{background:var(--input);border:1px solid var(--orange);border-radius:12px;padding:14px 16px}
 .whatif p{font-size:.95rem;max-width:95ch}
 .whatif p+p{margin-top:8px}
 .lanenote{font-size:.88rem;color:var(--ink2);margin-top:10px;max-width:95ch}
@@ -91,7 +91,7 @@ tr.me td{font-weight:800;color:var(--greendeep);background:#f1f6e4}
 .blk{padding-top:12px;border-top:1px solid var(--line)}
 .blk .lbl{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--greendeep);margin-bottom:6px}
 .blk.opp .lbl{color:var(--orange)}
-.blk.opp p{font-weight:700}
+.blk.opp p{font-weight:700;font-style:italic;text-align:center}
 .blk p{font-size:1.02rem;line-height:1.55}
 .fullbox{background:var(--surface);border-radius:16px;padding:20px 24px}
 .fullbox>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
@@ -143,7 +143,7 @@ td.n{white-space:nowrap}
   <div class="brand"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgBAMAAAB54XoeAAAAGFBMVEUAAACIuyqPxC13uTCMtySHuiqHuip+fgECtyq/AAAACHRSTlMA/f4EHqVgAozQYr0AAAnPSURBVHja7VrbbxTXGf+dmbEnrYGdBRtabApO0zQFGw82IQ0YvIDxQ2WCE6Q+RCJtKrVSqkBXIlL/ikobtQ9VBSkVlfqSyLQPeWiIWItcnDaQQXYQoWCWWMVbut4ZoGR3Yc9OH+Z2zlx2Z+zH+Dyg9Vw+vtv5fd/3OwOsrJW1sr6mS256V0wmbGhDERQ4+Wgh6gmSQNrJ9zVgSCHGqjwg0mULVDWMbS7lAWA0fZpC1ZYl8ORvMNYxpcA0AKJAP3Q3vywNVU069ldF995T9INvLycoxbHSfypV5kKVlNu/Vww+KMQU+PNPGfUAAKax6t+ZpZosvjKlh/lL3HaRLknDcHkw6dXjSzBZxKFweYBZ/zOyiYPyK/p5JfKmMvanRkIfynSN2eS2stnQEmko135SrDa5X6OfJ9NQ7bphNH/iiJJLomFp+7UWTyy+m0TDDCm0UBBk37n4AkXSNCLW6pyjsU02R6rVlgIrY08UYwgUTUAmRjXGRnr4hRlDoCk1QIcacQRWfoxi6603tvoo1E1GnK1ufqS11nDXrFK6V3pYjQUelecmpltEuX2Via7bu/1lgygAAD9WkIbRQkNpdapKKr/8qsBfTlfqe7Y+mV5/W/Fp3lVumofZ3x3WDKS/81E350KSerZ8HgCkAx1XeCXJdgciwk1+NW8A627t03h5I2cgqgAuQTrGQyQhi9Emy8dXXzYAcii1lrNYOfjWycrCwsLCAkQ6c4THoM7FJia3rzIBdM1hNSfvwGm55oHQzCt5zh96ZB6K0rgJgOzus0Nq/88PTquePGj07A7O5okoDeXaq3kDQOdcf5p1YWcH+BxSr3ZwepQiNHy+bcoAQLb1a2lWgz0zvpzUHk2wFqTFcA1FHLlglYqPKevCrpvU1zgBEgdtA2ouLMoDz1yrAiCPr0JY78WRjJpFC4A8edjey7Qi5PtaMUzD9h7dStQ8dhgGj6HSYafhIi8oOUAUmcQnQinMZHVw0rEw8+Qkn7ei2O0+fd96+2eTAafwJv/6b+UqAJCdcrHQy6T1dqUIQVhjVO0lUApAnGG88s0HNKChXHvpgpXE83XO5V03KW+h+KAGQObiZkWFS5vXnv3M+vFAhCikPIvvhjfUtddfZKKyJR/Iw9/aAE3GawCbEhNqOMrl/sikooU3nA+lryyXdE6ZME0P8xRDAyAIa9wrwiMrApJ3CfOVgIaHbQV1CchmvJRom4nAddq45/2xTvQJFNtsD2K8BuR6vTtlKaqY9E00aTjpMVundWcBMF4jw7XITuUWW3d5gXL7Bft9/Q0AYNBOUaME5j7wolJ/nhdY2+OIGP8EgObNNWYhgxijnfW65x3piuPcsxSA5KWNks9HCqTMbt7CaSgSJ5F1yZdOUpOOiu5nkYAV6IbECgEVlFgtn6r4bHYEytKkOyFl/QlPmzSkt6Kc2tZja9h1HQBEocfwlYsgOABgUNPqR1yTXYvLiUZ8aTYisd9woXI8kUCTRAh803FuqhBINTORynaw1jr7uM3KOakReCY8bYjB95r2w9pLLhDIgY1bG7Jf+G/Y4OZLBsnW4TMXCM4F37pkV8TuENCWQk2ut3lzeiawz9p/Yd87H7qbzTAfDmvuvg0Zis9z259f9fCguG1MWwjBY+rxApzZknPSRrrQGpxjrLyTh6LbCZLh1xIKYTa94iY27WOwb5ncnWDv8BjgHAHZXpALmhMU1YgDzhGMhBc7L8qzt+PssvBuRPJ5SwAAD52JmDQm3ruS60PRc0OZLj0cxO0c6Os+PywtJmUXHLKai+KJFawTn2gBXBuTSWyo11PtdQWqvtKaaPXyGwUCAM3wXUywvBROaV6sl7HdtC/drHEFypSJrZZ0o5i+cVQAasuAgrqb16TugYOX7GYhoUD62N/YS4mPA/iYuCOwWdBC0MBq8RDOrcAMqSm9jsDOfGx4IdKoU/UCEmfcIOt2PZeCJwiB9egPUXVZNlOGr55LAG1FPYu2hvcDnUONqefhiGqE5SE9b0NfT3RMui56NWUpUa7X+HpOXCAVuRmOfOlQ4JLpXTStXwJhBjvrV+mO88xhpRBmsinIsfYNEZyEcoavMxGE5Nom8mg90MYPG27SMAJZlDZjOjST5V04XmM7CaYutJejfZj9hrvTyWatCEiSQ4B2TpmMhuzBXzPKlR14rVBvc+TrlG1FasyoRH4aXQPYOwrfwfSpXPN0Iu3ZsiEfaXLR412IPA1AmnOyWlvgmiWmApgfRIOz10Ra5dttAsnufl8Hy5SmtXpUaa6LisG1MXsd6slLQltDdgB83B850Zj8wCvvPOcQuhmfwJzhqXhPjYpKbdjgRs76m/aAnXpH9Tec7AB4LrLuMfxkmXoDNrmPwIkPS+esXwyPskzueArSqhdj5Wml6BdImZGyfedceNow/CQZeaIo9VuIQx5/sRDosVWGOLi3KtyJ/cMs76Kgr9f6O9VDg4NP5j6bieFjjnjF+506A/GqRVKRobfDKAKyhemXrK6nbZPHRp4DJNLDEKj/AvZrNhudyQU1FFlUvDegAZDpvENrPTYADDMEKnSR2iwP2fMXLURDnqnsnDueC6Y1c/ZDGobNcZDO66GTFW38qMAegp012QFEOjEN9RnmAXIEG354DQCUTUoxfFT7Nnv9YZ9SZHC8MY3su2UOu/65+LAKgOz++0IEGdbGuNylpL3/lbL8Mrpu9g9OWgYHGw3R/pebJ1ITsyem2Upz6DJ7eFJ7WJqzDdYihkda38/1Dx8OM2E5iV2X2NJAxrEPAJTBi1rkuJstcEeWldIuJwjS9sldNzj9FXFeB0A6PjSj5+fpO2u4EyGz9PJliIMbN264UxybTXH3Vn86Uq2CSEerxSYMZWbtBfhOyBbfB4DR3ndS/NnZvvlbJsi67nxTyjN7xZ/xii5lgPqU/4MJ6G09BpSRMy041PZuI7QTDkBF1/X9GpT5ejbXhCIAsHVHkF3RdT0gj2wF0spgPZNrxfKyiINmnyF8bG4eOdWaNm7xOYO3ix7UYrAiAGp9A7EIyL4fAHKTmZWtJt0xbBZLsXgbKyz7Y1g83mqgZjSUhB69pQd1Gp+6avR/q9U3CMrTqWJ8DVt/JUEOTFLE9yFofagpRUDW9fQnYesA+fqLzT6FSe/9fbF12HzFrYnR6cHJGLSO/yiz/UaUxPT/7sbnDz0O4x9DJErexqSMp7XmhivVcHmzjSVoCGTf+y5RgiTBzpe1ejx2LeTaoUs+lE7rR08l42D5wLz31ABh+t+0snPgVDY2/4ewTw3Fgx1Tjt36aOoUnvtkOQKtz0GsjyFH02/VIz+vTCBwiGrAEEA1QJSWQ2YxMlUA1scmK2tlrayv3/o/C21IbtPPjhwAAAAASUVORK5CYII=" alt=""><div><span class="bn">Harbor Business Solutions</span><span class="bw">Prepared by Andy Cook, Business Solutions Manager &middot; <a href="mailto:andy.cook@harborfoods.com">andy.cook@harborfoods.com</a></span></div></div>
   <div class="eyebrow">Bistro guest snapshot &middot; SureStay by Best Western SeaTac Airport North &middot; November 20, 2026</div>
   <h1>Your Bistro's Guest Snapshot</h1>
-  <p class="intro">Hi, I'm Andy Cook, Harbor's restaurant consultant in residence. I work with independent operators around the Northwest on operations, menus, service and the technology that fits how they run. Paul and Neil mentioned you've been working out how the bistro fits with the hotel, including getting the technology to cooperate, so I took a look.</p>
+  <p class="intro">Hi, I'm Andy Cook, Harbor's restaurant consultant in residence. I work with independent operators around the Northwest on operations, menus, service and the technology that fits how they run. Paul and Neil mentioned you've been working out how the bistro fits with the hotel, including getting the technology to cooperate, and that you've chosen Square for the bistro. So I took a look, and built the setup below around Square.</p>
   <hr class="rule">
   <p class="intro"><b>CONTEXT:</b> This is an outside-in look, from public listings and what your guests say in reviews. We haven't talked yet, so I'm not assuming anything about your business or your numbers.</p>
   <hr class="rule">
@@ -213,7 +213,7 @@ td.n{white-space:nowrap}
   </div>
 </div></section>
 <section class="part"><div class="wrap">
-  <div class="parthead"><h2>[POTENTIAL] Parallel Techstack</h2><p>Your hotel and your bistro run on two different kinds of technology. Here's how they usually fit together, and why it's easier to let the bistro run on its own POS, side by side with the hotel. I don't know how your systems are set up today, so I'm starting from a blank slate. Forgive anything that reads like an assumption. I don't have any.</p></div>
+  <div class="parthead"><h2>Parallel Techstack</h2><p>You've chosen Square for the bistro, and it fits running the bistro side by side with the hotel. I don't know how your systems are set up today, so I'm starting from a blank slate. Forgive anything that reads like an assumption. I don't have any. Here's how Square could sit next to the hotel's system, and a few things worth talking through.</p></div>
   <div class="two even" style="margin-bottom:14px">
     <div class="card"><h3>The HOTEL</h3>
       <p class="sub">Reservations and folios</p>
@@ -223,25 +223,22 @@ td.n{white-space:nowrap}
       </ul>
     </div>
     <div class="card"><h3>The BISTRO</h3>
-      <p class="sub">Connecting to the hotel</p>
+      <p class="sub">Square, on its own</p>
       <ul class="pts" style="margin-top:0">
-        <li>Very few restaurant POS systems connect to AutoClerk. Toast's list of hotel partners doesn't include it, and QR ordering platforms tend to list other hotel systems.</li>
-        <li>When a connection runs through that on-site connector and it goes down, charges stop reaching guest folios until someone restarts it.</li>
+        <li>Square gives the bistro its own card processing, reports and online ordering page, separate from the hotel.</li>
+        <li>I didn't find a built-in Square connection to AutoClerk. The setup below doesn't need one, and room charges are one of the things worth talking through.</li>
       </ul>
     </div>
   </div>
-  <div class="card" style="margin-bottom:14px"><h3>Parallel POS</h3>
-    <p class="pin" style="margin-top:6px;font-size:1rem">Rather than forcing the two systems to talk, the bistro can run its own POS alongside the hotel's, with its own card processing and its own reporting. The hotel keeps its system exactly as it is. The bistro gets a POS built for restaurants, with online ordering and QR cards that work out of the box, and it can run the grab-and-go case around the clock.</p>
-  </div>
   <div class="card">
     <h3>Order flow</h3>
-    <p class="sub">My outline of a common independent setup. Features like scheduled pickup and a second device vary by POS company and are worth confirming.</p>
+    <p class="sub">How Square could run the bistro and the case. Scheduled pickup times and QR ordering options are worth confirming during setup.</p>
     <div class="lane">
       <div class="lh"><b>When the kitchen is open</b><span>Breakfast and dinner hours, with a cook on the line</span></div>
       <div class="flow">
         <div class="node lead"><span class="lbl2 o">Guest</span><b>Scans a QR card</b>In the room, the lobby or at the front desk, or walks up to the counter.</div>
         <div class="node"><span class="lbl2">Order</span><b>Online ordering page</b>Orders and pays by card from their phone.</div>
-        <div class="node"><span class="lbl2">Register</span><b>Bistro terminal</b>Takes counter orders and receives online ones in the same place.</div>
+        <div class="node"><span class="lbl2">Register</span><b>Square terminal</b>Takes counter orders and receives online ones in the same place.</div>
         <div class="node"><span class="lbl2">Kitchen</span><b>Kitchen printer</b>The order prints on the line, and the cook makes it fresh.</div>
       </div>
     </div>
@@ -250,7 +247,7 @@ td.n{white-space:nowrap}
       <div class="flow">
         <div class="node lead"><span class="lbl2 o">Crew</span><b>Stocks the case</b>During kitchen hours, the crew preps grab-and-go to a set par.</div>
         <div class="node"><span class="lbl2">Guest</span><b>Grabs an item</b>From the case near the front desk, any time of day or night.</div>
-        <div class="node"><span class="lbl2">Front desk</span><b>Rings it up</b>On a second device logged into the bistro's POS.</div>
+        <div class="node"><span class="lbl2">Front desk</span><b>Rings it up</b>On a second Square device on the bistro's account.</div>
         <div class="node"><span class="lbl2">Reports</span><b>Bistro's books</b>The sale lands in the bistro's reports, not the hotel's.</div>
       </div>
       <p class="lanenote">Early departures can also order the night before, and the crew packs those with the case so they're waiting at the front desk in the morning.</p>
@@ -258,7 +255,7 @@ td.n{white-space:nowrap}
     <div class="lane">
       <div class="lh"><b>What if the market ran through it too?</b><span>A question, since I don't know how it works today</span></div>
       <div class="whatif">
-        <p>Listings mention a sundry shop with snacks and drinks, and there may be toiletries and other market items too. If those sales run through the hotel's system today, moving them into the parallel POS would put all food and market sales in one place, with one set of reports and inventory, and take one more piece off the hotel's side.</p>
+        <p>Listings mention a sundry shop with snacks and drinks, and there may be toiletries and other market items too. If those sales run through the hotel's system today, moving them into Square would put all food and market sales in one place, with one set of reports and inventory, and take one more piece off the hotel's side.</p>
         <p>Harbor Wholesale carries a full convenience store line, so the shelf and the grab-and-go case could come from the same place, on the same order, with costs that are easier to see on the P&amp;L.</p>
       </div>
     </div>
@@ -266,57 +263,42 @@ td.n{white-space:nowrap}
       <div class="node hotel" style="grid-column:1/-1"><span class="lbl2">Hotel</span><b>Hotel system stays as is</b>Reservations and folios stay where they are. The only link is a QR card, and an optional manual room charge.</div>
     </div>
   </div>
-  <div class="two poscard">
-    <div class="card"><h3>Equipment</h3>
-      <ul>
-        <li>One POS terminal with its own card processing account</li>
-        <li>An online ordering page that comes with the POS</li>
-        <li>A kitchen printer for online orders</li>
-        <li>QR cards for rooms, the lobby and the front desk</li>
-        <li>A second device at the front desk for the grab-and-go case</li>
-      </ul>
-      <details class="more"><summary>Room charges</summary>
-        <p class="pin">The bistro can add a "Room Charge" payment type and put the room number on the check. The front desk posts the day's totals to guest folios by hand. It's a few minutes a day and keeps the bistro independent.</p>
-        <p class="pin">If automatic room charging becomes a must-have, it means a POS with a direct link to the hotel's software, which narrows the choices and adds cost.</p>
-      </details>
-    </div>
-    <div class="card"><h3>POS examples</h3>
-      <p class="sub">Two POS companies that offer this without a long contract, from their pricing pages on November 20, 2026.</p>
-      <div class="tw"><table><thead><tr><th>Example</th><th>Monthly</th><th>Card fees</th></tr></thead><tbody>
-        <tr><td>Square for Restaurants, Free plan</td><td class="n">$0</td><td>2.6% + 15&cent; in person, 2.9% + 30&cent; online</td></tr>
-        <tr><td>SpotOn, POS Essentials</td><td class="n">$55/station</td><td>2.45% + 15&cent;</td></tr>
-      </tbody></table></div>
-      <details class="more"><summary>Pricing details</summary>
-        <p class="pin">Square's free plan includes a basic online ordering site and has no contract. SpotOn's Essentials plan is month to month with hardware bought separately, and online ordering is an add-on bundle at $50 a month plus 0.20% of sales, capped at $200. Hardware is extra with both. These are examples to compare, not a recommendation, and prices are worth confirming at signup.</p>
-      </details>
+  <div class="card" style="margin-top:14px"><h3>Something to talk about</h3>
+    <div class="takegrid" style="margin-top:10px">
+      <div><b>Room charges</b><span>What Square showed you for the front desk, and whether guests need to charge meals to their room. Square's App Marketplace lists a third-party Room Charge app that links Square to hotel systems, and it's worth confirming it supports yours. The simple fallback is a room charge payment type in Square that the front desk posts to folios by hand.</span></div>
+      <div><b>Free or Plus</b><span>With a second device at the front desk, the Free plan starts at about $50 a month in software. Plus adds lower in-person card fees, a kitchen display at no extra cost, and scan to pay. Which one makes sense depends on volume.</span></div>
+      <div><b>The grab-and-go case</b><span>What goes in it, the par for each item, and who stocks it each shift so it's full before the kitchen closes.</span></div>
+      <div><b>The market</b><span>Whether the sundry shop moves into Square with the bistro, and what Harbor Wholesale's convenience line could fill it with.</span></div>
     </div>
   </div>
 </div></section>
 <section class="part"><div class="wrap"><details class="fullbox"><summary><h2>Full findings</h2><span>Sources, listings and questions</span></summary>
-  <p class="mt">Who stays</p>
+  <p class="mt">GUESTS</p>
   <div class="tw"><table><thead><tr><th>Guest</th><th>What I saw</th></tr></thead><tbody>
     <tr><td>Early flyers</td><td>The most common pattern in reviews. One recent guest walked from baggage claim in about 15 minutes.</td></tr>
     <tr><td>Cruise passengers</td><td>Seattle's 2026 season ran April 17 to October 18 with nearly 2 million passengers. Reviewers mention staying the night before sailing.</td></tr>
     <tr><td>Park-and-fly</td><td>Cruise parking guides list parking here at $15 a day or with a Park and Fly package.</td></tr>
     <tr><td>Voucher guests</td><td>Review summaries mention guests with food vouchers, and one reviewer stayed on a USO voucher.</td></tr>
   </tbody></table></div>
-  <figure class="pull"><blockquote>Decent choices for dinner but only a pay breakfast.</blockquote><figcaption>From a Tripadvisor review</figcaption></figure>
-  <p class="mt">Online listings</p>
+  <p class="mt">ONLINE LISTINGS</p>
+  <p class="takeintro" style="margin:6px 0 0">The bistro shows up as Ranier, Rainier and Rainer, as a bistro and bar and as a bistro and grill. Settling on one name and using it everywhere makes it easier for guests to find, and easier to promote.</p>
   <div class="tw"><table><thead><tr><th>Source</th><th>Name shown</th><th>Hours shown</th></tr></thead><tbody>
     <tr><td>Best Western</td><td>Ranier Bistro and Bar</td><td>7 to 10 a.m. and 5 to 9 p.m., plus a separate 7 a.m. to 9 p.m. line</td></tr>
     <tr><td>Expedia and Hotels.com</td><td>Rainier Bistro and Grill</td><td>Breakfast 7 to 10 a.m., $15 on Expedia</td></tr>
     <tr><td>Best Western Sweden</td><td>Rainer Bistro and Bar</td><td>Not listed</td></tr>
   </tbody></table></div>
-  <div class="take"><h3>Questions for you</h3>
+  <div class="take"><h3>QUESTIONS FOR YOU</h3>
     <p class="takeintro">Things public listings can't tell me.</p>
     <div class="takegrid">
       <div><b>Guests</b><ul>
+        <li>Do you have reports you could pull that show your guest patterns, like arrival and departure times?</li>
+        <li>Guest reviews suggest a good share of cruise travelers. Can you confirm that?</li>
         <li>Roughly how many leave before 7 a.m. or arrive after 9 p.m.</li>
         <li>How often guests show up with airline or USO vouchers</li>
       </ul></div>
       <div><b>The bistro</b><ul>
-        <li>Its real hours today, since listings show a few versions and spell the name three ways</li>
-        <li>What's running now for a register and card processing, and whether it's under contract</li>
+        <li>Its real hours today, and the name you'd like guests to know it by</li>
+        <li>Do you have reports you could pull from the bistro and the front desk market, like sales by hour and top sellers?</li>
         <li>When the hotel and bistro systems clashed, what actually broke</li>
         <li>Whether sundry shop sales run through the hotel's system or somewhere else today</li>
       </ul></div>
@@ -332,7 +314,7 @@ td.n{white-space:nowrap}
 
 <footer><div class="wrap">
   <p>This snapshot was taken on November 20, 2026, from public listings, guest reviews, nearby hotels' dining pages and POS companies' pricing pages, with no inside knowledge of the business. Guest timing is an estimate from reviews and check-in and checkout times, not occupancy data.</p>
-  <p>Sources referenced: <a href="https://www.bestwestern.com/en-us/book/hotel/seatac/surestay-by-best-western-seatac-airport-north/52121/dining">Best Western dining page</a>, <a href="https://expedia.com/SeaTac-hotels-SureStay-Hotel-by-Best-Western-SeaTac-Airport-North.h26032.Hotel-information">Expedia</a>, <a href="https://www.tripadvisor.com/ShowUserReviews-g58732-d124269-r1082190683-SureStay_By_Best_Western_Seatac_Airport_North-SeaTac_Washington.html">Tripadvisor</a>, <a href="https://www.portseattle.org/node/42861">Port of Seattle</a>, <a href="https://www.marriott.com/en-us/hotels/seasc-courtyard-seattle-southcenter/dining">Courtyard Southcenter</a>, <a href="https://www.fdd.ninja/brands/surestay_hotel_by_best_western/2025/currently_required_pms_franchisees">SureStay franchise disclosure summary</a>, <a href="https://www.fdd.ninja/brands/surestay_hotel_by_best_western/2025/affiliate_pms_currently_licensed">Lodging Link requirement</a>, <a href="https://stayntouch.freshdesk.com/support/solutions/articles/24000033367-how-to-manage-service-interruptions-in-your-comtrol-interface-system">Comtrol connector</a>, <a href="https://support.toasttab.com/en/article/Hotel-Property-Management-Systems-PMS-Integrations-with-Toast?lang=en_US">Toast hotel partners</a>, <a href="https://squareup.com/us/en/point-of-sale/restaurants/pricing">Square pricing</a>, <a href="https://spoton.com/pricing">SpotOn pricing</a>.</p>
+  <p>Sources referenced: <a href="https://www.bestwestern.com/en-us/book/hotel/seatac/surestay-by-best-western-seatac-airport-north/52121/dining">Best Western dining page</a>, <a href="https://expedia.com/SeaTac-hotels-SureStay-Hotel-by-Best-Western-SeaTac-Airport-North.h26032.Hotel-information">Expedia</a>, <a href="https://www.tripadvisor.com/ShowUserReviews-g58732-d124269-r1082190683-SureStay_By_Best_Western_Seatac_Airport_North-SeaTac_Washington.html">Tripadvisor</a>, <a href="https://www.portseattle.org/node/42861">Port of Seattle</a>, <a href="https://www.marriott.com/en-us/hotels/seasc-courtyard-seattle-southcenter/dining">Courtyard Southcenter</a>, <a href="https://www.fdd.ninja/brands/surestay_hotel_by_best_western/2025/currently_required_pms_franchisees">SureStay franchise disclosure summary</a>, <a href="https://www.fdd.ninja/brands/surestay_hotel_by_best_western/2025/affiliate_pms_currently_licensed">Lodging Link requirement</a>, <a href="https://stayntouch.freshdesk.com/support/solutions/articles/24000033367-how-to-manage-service-interruptions-in-your-comtrol-interface-system">Comtrol connector</a>, <a href="https://squareup.com/us/en/point-of-sale/restaurants/pricing">Square pricing</a>, <a href="https://squareup.com/us/en/app-marketplace/app/room-charge">Square Room Charge app</a>.</p>
 </div></footer>
 </body>
 </html>
